@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:sandybrown;
+}
+
+.navList{
+    display: flex;
+    justify-content: space-around;
+    gap:2rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navItem{
+    cursor: pointer;
+}
+
+.navItem:hover{
+   
+    text-shadow:  2px 2px 5px rgb(19, 133, 248);
+}
