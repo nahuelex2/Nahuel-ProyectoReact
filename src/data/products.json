@@ -1,58 +1,56 @@
-{
-    "products": [
-        {
-            "id": 1,
-            "name": "Guitarra eléctrica",
-            "category": "instrumentos",
-            "price": 800,
-            "description": "Una guitarra eléctrica de alta calidad para músicos profesionales.",
-            "availability": true,
-            "image": "src/assets/tatoo.png"
-        },
-        {
-            "id": 2,
-            "name": "Pedal de distorsión",
-            "category": "pedalesDeEfecto",
-            "price": 150,
-            "description": "Un pedal de distorsión para agregar un tono potente a tu guitarra.",
-            "availability": false,
-            "image": "src/assets/tatoo.png"
-        },
-        {
-            "id": 3,
-            "name": "Amplificador de bajo",
-            "category": "amplificadores",
-            "price": 500,
-            "description": "Un amplificador de bajo con sonido nítido y potente.",
-            "availability": true,
-            "image": "src/assets/tatoo.png"
-        },
-        {
-            "id": 4,
-            "name": "Teclado electrónico",
-            "category": "instrumentos",
-            "price": 600,
-            "description": "Un teclado electrónico versátil para músicos creativos.",
-            "availability": true,
-            "image": "src/assets/tatoo.png"
-        },
-        {
-            "id": 5,
-            "name": "Pedal de delay",
-            "category": "pedalesDeEfecto",
-            "price": 120,
-            "description": "Un pedal de delay para crear efectos de eco asombrosos.",
-            "availability": true,
-            "image": "src/assets/tatoo.png"
-        },
-        {
-            "id": 6,
-            "name": "Amplificador de guitarra",
-            "category": "amplificadores",
-            "price": 700,
-            "description": "Un amplificador de guitarra con múltiples canales y efectos integrados.",
-            "availability": false,
-            "image": "src/assets/tatoo.png"
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "name": "Guitarra eléctrica",
+        "category": "instrumentos",
+        "price": 800,
+        "description": "Una guitarra eléctrica de alta calidad para músicos profesionales.",
+        "availability": true,
+        "image": "/src/assets/guitarraElectrica.png"
+    },
+    {
+        "id": 2,
+        "name": "Pedal de distorsión",
+        "category": "pedales",
+        "price": 150,
+        "description": "Un pedal de distorsión para agregar un tono potente a tu guitarra.",
+        "availability": false,
+        "image": "/src/assets/pedalDistorsion.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Amplificador de bajo",
+        "category": "amplificadores",
+        "price": 500,
+        "description": "Un amplificador de bajo con sonido nítido y potente.",
+        "availability": true,
+        "image": "/src/assets/amplificadorBajo.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Teclado electrónico",
+        "category": "instrumentos",
+        "price": 600,
+        "description": "Un teclado electrónico versátil para músicos creativos.",
+        "availability": true,
+        "image": "/src/assets/tecladoElectronico.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Pedal de delay",
+        "category": "pedales",
+        "price": 120,
+        "description": "Un pedal de delay para crear efectos de eco asombrosos.",
+        "availability": true,
+        "image": "/src/assets/delayPedal.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Amplificador de guitarra",
+        "category": "amplificadores",
+        "price": 700,
+        "description": "Un amplificador de guitarra con múltiples canales y efectos integrados.",
+        "availability": false,
+        "image": "/src/assets/amplificadorGuitarra.jpg"
+    }
+]

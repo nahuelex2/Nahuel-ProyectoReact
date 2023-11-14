@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { products } from '../../data/products.json'
+import products from '../../data/products.json'
 import { ItemList } from "../ItemList"
 export const ItemListContainer = ({ greeting }) => {
     const [items, setItems] = useState([])
@@ -20,6 +20,7 @@ export const ItemListContainer = ({ greeting }) => {
             }
             else {
                 const filterByCategory = Response.filter(item => item.category === id)
+                console.log(filterByCategory);
                 setItems(filterByCategory)
             }
         })

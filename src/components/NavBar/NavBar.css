@@ -1,24 +1,25 @@
-.header{
+.header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:rgba(107, 118, 169, 0.902);
+    background-color: var(--primaryColor)
 }
 
-.navList,a{
+.navList,
+a {
     display: flex;
     justify-content: space-around;
-    gap:2rem;
+    gap: 2rem;
     text-decoration: none;
     list-style: none;
-    color: rgb(252, 200, 95);
+    color: rgb(61, 57, 49);
 }
 
-.navItem{
+.navItem {
     cursor: pointer;
 }
 
-.navItem:hover{
-   
-    text-shadow:  2px 2px 5px rgb(240, 242, 244);
+.navItem:hover {
+
+    text-shadow: 2px 2px 5px rgb(52, 245, 4);
 }

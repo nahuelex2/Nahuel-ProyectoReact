@@ -10,7 +10,7 @@ export const NavBar = () => {
             <ul className="navList">
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='category/instrumentos'>Instrumentos</NavLink>
-                <NavLink to='category/pedalesDeEfecto'>Pedales de efecto</NavLink>
+                <NavLink to='category/pedales'>Pedales de efecto</NavLink>
                 <NavLink to='category/amplificadores'>Amplificadores</NavLink>
 
             </ul>

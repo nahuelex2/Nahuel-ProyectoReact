@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 
 import { ItemDetail } from "./ItemDetail"
-import { products } from '../data/products.json'
+import products from '../data/products.json'
 export const ItemDetailContainer = ({ greeting }) => {
     const [item, setItem] = useState(null)
     const { id } = useParams()
@@ -18,15 +18,15 @@ export const ItemDetailContainer = ({ greeting }) => {
 
 
             const findById = Response.find(item => item.id === Number(id))
-            console.log(findById);
+
             setItem(findById)
 
         })
     }, [id])
 
-    return <>
-        {item ? <ItemDetail item={item} /> : <>loading</>}
+    return <div className="detailContainer">
+        {item ? <ItemDetail item={item} /> : <>loading...</>}
 
-    </>
+    </div>
 
 }

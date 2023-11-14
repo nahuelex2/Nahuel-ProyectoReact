@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: rgba(169, 113, 221, 0.945);
+
+}
+
+.CardContainer {
+    width: 85%;
+    margin: 0 auto;
+    background-color: var(--primaryColor);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.detailContainer {
+    width: 80%;
+    height: 500px;
+    background-color: var(--primaryColor);
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item__Body {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 20%;
+}
+
+.item__image {
+    width: 80%;
+    /* height: 80%; */
+    object-fit: contain;
+    margin: 2rem;
+}
