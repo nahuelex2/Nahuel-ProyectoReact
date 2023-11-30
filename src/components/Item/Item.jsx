@@ -2,10 +2,11 @@ import { Link } from "react-router-dom"
 
 import './Item.css'
 export const Item = ({ item }) => {
+
     return (
         <div className="card" >
 
-            <img className="card__img" src={item.image} alt="img" />
+            <img className="card__img" src={item.imageUrl} alt="img" />
 
 
             <div className="card__body">
