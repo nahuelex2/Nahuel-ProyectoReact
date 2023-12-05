@@ -1,34 +1,38 @@
-import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
-import products from '../../data/products.json'
-import { ItemList } from "../ItemList"
+import { useParams } from "react-router-dom";
+import { useEffect, useState, useContext } from "react";
+
+import { ItemList } from "../ItemList";
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
+import { CartContext } from "../../contexts/CartContext";
+
+
+
 export const ItemListContainer = ({ greeting }) => {
-    const [items, setItems] = useState([])
-    const { id } = useParams()
+    const [items, setItems] = useState([]);
+    const { id } = useParams();
 
+    const value = useContext(CartContext)
     useEffect(() => {
-        const myPromise = new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(products)
-            }, 2000);
-        })
+        const db = getFirestore()
+        const refCollection = !id ? collection(db, 'items')
+            : query(collection(db, 'items'), where('category', '==', id))
 
-        myPromise.then((Response) => {
+        getDocs(refCollection).then((snapshot) => {
+            if (snapshot.size === 0) console.log('no results');
+            else
 
-            if (!id) {
-                setItems(Response)
-            }
-            else {
-                const filterByCategory = Response.filter(item => item.category === id)
-                console.log(filterByCategory);
-                setItems(filterByCategory)
-            }
+                setItems(
+                    snapshot.docs.map((doc) => {
+                        return { id: doc.id, ...doc.data() }
+                    })
+                );
         })
     }, [id])
 
     return <>
-        <h1>{greeting}</h1>
-        {items ? <ItemList items={items} /> : <>Loading...</>}
-    </>
+        <h1>{greeting}</h1 >
+        {items ? <ItemList items={items} /> : <>Loading...</>
+        }
+    </>;
 
-}
+};
