@@ -28,6 +28,9 @@ export const CartProvider = ({ children }) => {
         }
     }
 
-    console.log(items);
-    return <CartContext.Provider value={{ items, clear, onAdd }}>{children}</CartContext.Provider>
+    const onRemove = (id) => {
+        const filterItems = items.filter(item => item.id !== id)
+        setItems(filterItems)
+    }
+    return <CartContext.Provider value={{ items, clear, onAdd, onRemove }}>{children}</CartContext.Provider>
 }

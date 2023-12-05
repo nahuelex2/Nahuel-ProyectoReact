@@ -47,3 +47,22 @@
     object-fit: contain;
     margin: 2rem;
 }
+
+.cartTable {
+    margin: 0 auto;
+    width: 85%;
+    background-color: rgba(73, 68, 68, 0.658);
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.cartTable thead,
+tbody {
+    background-color: rgba(249, 251, 252, 0.712);
+}
+
+.cartTable img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+}

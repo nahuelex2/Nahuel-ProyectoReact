@@ -3,11 +3,14 @@ import { useContext } from "react"
 import { ItemCounter } from "./ItemCounter"
 import { CartContext } from "../contexts/CartContext"
 
+
+
 export const ItemDetail = ({ item }) => {
     const { onAdd } = useContext(CartContext)
     const addItem = (quantity) => {
         onAdd(item, quantity)
     }
+
 
     return (
         <>

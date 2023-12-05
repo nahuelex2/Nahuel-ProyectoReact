@@ -10,12 +10,14 @@ export const CartWidget = () => {
     const { items } = useContext(CartContext)
     const total = items.reduce((accumulator, currentValue) => accumulator + currentValue.quantity, 0)
     return (
-        <div>
-            <Link to="/cart">
+
+        <Link to="/cart">
+            <div>
                 <img className='cartImg' src={cart} alt="carrito" />
                 <span>{total}</span>
-            </Link>
-        </div>
+            </div>
+        </Link>
+
 
     )
 }

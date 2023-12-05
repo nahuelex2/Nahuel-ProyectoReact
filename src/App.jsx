@@ -10,9 +10,9 @@ import { Cart } from './components/Cart'
 import { CartProvider } from './contexts/CartContext'
 
 function App() {
-
-
   return (
+
+
     <CartProvider>
       <BrowserRouter>
         <NavBar />
@@ -25,7 +25,9 @@ function App() {
         </Routes>
       </BrowserRouter>
     </CartProvider>
+
   )
+
 }
 
 export default App
