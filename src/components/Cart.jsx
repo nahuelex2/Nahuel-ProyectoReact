@@ -32,7 +32,7 @@ export const Cart = () => {
         const orderCollection = collection(db, 'orders')
         addDoc(orderCollection, order).then(({ id }) => {
             if (id) {
-                alert(`su orden `, id, 'ha sido completada ')
+                alert(`su orden ` + id + 'ha sido completada ')
                 setBuyer(initialValues)
                 clear()
             }
