@@ -43,7 +43,7 @@ export const Cart = () => {
     const total = items.reduce((accumulator, currentValue) => accumulator + (currentValue.quantity * currentValue.price), 0)
     if (!items.length) {
         return <>
-            <h1>compra algo mijo</h1>
+            <h1>compra algo</h1>
             <button onClick={() => navigate('/')}>volver a home</button>
         </>
 
@@ -85,7 +85,8 @@ export const Cart = () => {
 
             <button onClick={clear}>Vaciar carrito</button>
             <hr />
-            <form >
+
+            <form className="userForm">
                 <input type="text" name="name" value={buyer.name} onChange={handleChange} placeholder="Nombre" />
                 <input type="text" name="phone" id="" value={buyer.phone} onChange={handleChange} placeholder="Telefono" />
                 <input type="text" name="email" id="" value={buyer.email} onChange={handleChange} placeholder="email" />

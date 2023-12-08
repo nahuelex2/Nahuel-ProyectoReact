@@ -4,7 +4,9 @@ import App from './App.jsx'
 import './index.css'
 
 
-import { initializeApp } from "firebase/app";
+
+import { initializeApp } from 'firebase/app';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyDoJc_7hfOart9PkRAfvvkG8MoGMBOPhk8",

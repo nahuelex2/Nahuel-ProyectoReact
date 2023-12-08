@@ -66,3 +66,12 @@ tbody {
     height: 150px;
     object-fit: contain;
 }
+
+.userForm {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 1rem;
+}
